@@ -1,3 +1,4 @@
+import { CourseService } from './course.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -10,4 +11,11 @@ export class AppComponent {
   alamat='Jln. Patriot Peterongan Jombang';
 
   tanggal=Date.now;
+  Hobbies:any[];
+  constructor(private courseServ:CourseService) { }
+
+  ngOnInit(){
+    this.Hobbies = this.courseServ.getAlfaza();
+  }
+
 }

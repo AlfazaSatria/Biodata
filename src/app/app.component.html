@@ -10,14 +10,17 @@
   <p>Nama: {{nama}}</p>
   <p>Alamat: {{alamat}}</p>
   <p>Hobby Saya</p>
-  <table>
+  <table border=1>
     <tr>
       <th>No.</th>
       <th>Hobby</th>
       <th>Keterangan</th>
     </tr>
-    <tr *ngFor="let hobby of Hobbies">
+    <tr *ngFor="let Hobby of Hobbies">
       <td>{{Hobby.id}}</td>
+      <td>{{Hobby.hobby}}</td>
+      <td>{{Hobby.ket}}</td>
+      
     </tr>
   </table>
 </div>  
