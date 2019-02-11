@@ -10,7 +10,7 @@ export class AppComponent {
   nama = 'Alfaza Satria Jalasena';
   alamat='Jln. Patriot Peterongan Jombang';
 
-  tanggal=Date.now;
+  tanggal=Date.now();
   Hobbies:any[];
   constructor(private courseServ:CourseService) { }
 
